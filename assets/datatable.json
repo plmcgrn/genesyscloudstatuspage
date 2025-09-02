@@ -1,0 +1,47 @@
+{
+    "id": "REDACTED",
+    "name": "Enable Outage Messages",
+    "division": {
+        "id": "REDACTED",
+        "name": "Care",
+        "selfUri": "/api/v2/authorization/divisions/REDACTED"
+    },
+    "description": "[DT 11]  Used to turn on/off outage messages by queueName",
+    "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "title": "Enable Outage Messages",
+        "description": "Used to turn on/off outage messages by queueName",
+        "type": "object",
+        "required": [
+            "key"
+        ],
+        "properties": {
+            "key": {
+                "title": "QueueName",
+                "type": "string",
+                "$id": "/properties/key",
+                "displayOrder": 0,
+                "maxLength": 256,
+                "minLength": 1
+            },
+            "Product Outage Message": {
+                "title": "Enable Outage Message",
+                "type": "boolean",
+                "$id": "/properties/Enable Outage Message",
+                "displayOrder": 1,
+                "default": false
+            },
+            "StatusPage Component IDs": {
+                "title": "Comma-separated list of StatusPage component ID's.  Used to match against StatusPge for outages.",
+                "type": "string",
+                "$id": "/properties/StatusPage Component IDs",
+                "displayOrder": 2,
+                "maxLength": 262144,
+                "minLength": 0
+            }
+        },
+        "additionalProperties": false,
+        "datatableId": "REDACTED"
+    },
+    "selfUri": "/api/v2/flows/datatables/REDACTED"
+}
