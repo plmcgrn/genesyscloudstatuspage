@@ -3,6 +3,8 @@
 ## Overview
 In this write-up, we will discuss how we built automation to take actionable events from StatusPage, and turn them into automated messaging in Genesys Cloud inbound voice flows.  This overall solution would work with any contact center platform that has API-based tooling, as well as any monitoring platform that can trigger notification-based events (webhook payloads).
 
+***Note:*** This repo is not a drop-in solution, but rather, a description of a general strategy.  Every contact center is different, so there is no "one size fits all" solution for something like this.
+
 ## Components
 
 ### Genesys Cloud
